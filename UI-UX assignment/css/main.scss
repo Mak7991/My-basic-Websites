@@ -1,0 +1,141 @@
+$secondaryColor: black;
+$primaryColor: white;
+$webTheme: #8b0000;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  background: linear-gradient(red, #8b0000);
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: 0px;
+  padding: 0;
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    width: 30%;
+    height: 100%;
+    justify-content: space-around;
+    margin-left: auto;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: capitalize;
+    }
+  }
+  .logo {
+    width: 20%;
+    margin: 15px;
+    list-style: none;
+    a {
+      width: 20%;  
+      color: $primaryColor;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:after {
+        content: "";
+        display: flex;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: 0.3s;
+        margin: 0 auto;
+      }
+      &:hover {
+        &:after {
+          width: 50%;
+        }
+      }
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+    }
+  }
+}
+.header {
+  height: 500px;
+  width: 100%;
+  background-color: $secondaryColor;
+}
+.about {
+  background-color: $webTheme;
+  height: 300px;
+  width: 100%;
+}
+.contact {
+  background-color: peru;
+  height: 300px;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  nav {
+    position: absolute;
+
+    .nav-links {
+      position: fixed;
+      background: linear-gradient(#8b0000);
+      height: 180px;
+      top: 5%;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(100px at 90% -55%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      a {
+        text-align: left;
+      }
+    }
+
+    .toggle {
+      position: absolute;
+      cursor: pointer;
+      outline: none;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      padding: 0;
+      border: none;
+      outline: none;
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 3px;
+        background-color: $primaryColor;
+        margin: 6px 0;
+        transition: 0.4s;
+        border: none;
+        outline: none;
+      }
+      &.change {
+        .bar1 {
+          -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+          transform: rotate(-75deg) translate(-4px, 6px);
+        }
+        .bar2 {
+          opacity: 0;
+        }
+        .bar3 {
+          -webkit-transform: rotate(45deg) translate(-6px, -9px);
+          transform: rotate(45deg) translate(-6px, -9px);
+        }
+      }
+    }
+    .nav-links.open {
+      clip-path: (1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+    }
+  }
+}

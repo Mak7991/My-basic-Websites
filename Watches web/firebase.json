@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Watches",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

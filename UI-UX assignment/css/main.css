@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+nav {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(red),
+    to(#8b0000)
+  );
+  background: linear-gradient(red, #8b0000);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  margin: 0px;
+  padding: 0;
+}
+
+nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-top: 10px;
+  width: 50%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-left: auto;
+}
+
+nav .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+nav .logo {
+  width: 88px;
+  margin: 15px;
+  list-style: none;
+}
+
+nav .logo a {
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav .logo a:after {
+  content: "";
+  display: flex;
+  width: 0;
+  height: 2px;
+  background: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+
+nav .logo a:hover:after {
+  width: 100%;
+}
+
+/* nav .logo a .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+} */
+
+.header {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+}
+
+.about {
+  background-color: #8b0000;
+  height: 300px;
+  width: 100%;
+}
+
+.contact {
+  background-color: peru;
+  height: 300px;
+  width: 100%;
+}
+
+.box {
+  width: 93%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+#hero {
+  display: none;
+}
+
+.left-right {
+  display: flex;
+  width: 100%;
+}
+.left {
+  width: 90%;
+}
+.right {
+  width: 20%;
+}
+.right > img {
+  width: 250px;
+}
+
+.img-text{
+  width: 100%;
+  text-align: center;
+}
+.img-text>div>img{
+  width: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  nav {
+    position: absolute;
+  }
+  nav .nav-links {
+    position: fixed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#8b0000));
+    background: linear-gradient(#8b0000);
+    height: 180px;
+    top: 5%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -55%);
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  nav .nav-links a {
+    text-align: left;
+  }
+  nav .toggle {
+    position: absolute;
+    cursor: pointer;
+    outline: none;
+    right: 5%;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+    transform: translate(-5%, -50%);
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+  nav .toggle .bar1,
+  nav .toggle .bar2,
+  nav .toggle .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+  }
+  nav .toggle.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-4px, 6px);
+    transform: rotate(-75deg) translate(-4px, 6px);
+  }
+  nav .toggle.change .bar2 {
+    opacity: 0;
+  }
+  nav .toggle.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -9px);
+    transform: rotate(45deg) translate(-6px, -9px);
+  }
+  nav .nav-links.open {
+    clip-path: 1000px at 90% -10%;
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #hero {
+    background-color: rgb(143, 62, 24);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #boximg {
+    padding-top: 70px;
+    width: 80%;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

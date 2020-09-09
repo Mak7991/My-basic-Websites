@@ -1,0 +1,35 @@
+.header{
+    height: 60px;
+    padding: 5px;
+    justify-content: center;
+    /* display: flex; */
+    
+}
+.logo{
+   width: 160px;
+}
+.links{
+    padding-right: 50px;
+    float: right;
+    font-style: italic ;    
+}
+li{
+    list-style: none;
+    display: inline;
+    color: red;
+    margin: 5px;   
+}
+a{
+    color: black;
+}
+/* span{
+    width: 30%;
+}
+.card-img-top{
+    width: auto;   
+} */
+.card{
+    width: 400px;
+    display: flex;
+    text-align: center;
+} 

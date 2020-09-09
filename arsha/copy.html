@@ -1,0 +1,1064 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Custom Xenforo Forum | Vbulletin Forum Development</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="ForumCube is specialized in Custom Xenforo Forum Development, Vbulletin Forum Development, and Xenforo Plugin Development for your community."/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://www.forumcube.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Custom Xenforo Forum | Vbulletin Forum Development" />
+<meta property="og:description" content="ForumCube is specialized in Custom Xenforo Forum Development, Vbulletin Forum Development, and Xenforo Plugin Development for your community." />
+<meta property="og:url" content="https://www.forumcube.com/" />
+<meta property="og:site_name" content="Forumcube" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="ForumCube is specialized in Custom Xenforo Forum Development, Vbulletin Forum Development, and Xenforo Plugin Development for your community." />
+<meta name="twitter:title" content="Custom Xenforo Forum | Vbulletin Forum Development" />
+<meta name="twitter:site" content="@forumcube_team" />
+<meta name="twitter:image" content="http://www.forumcube.com/wp-content/uploads/2015/03/squre-logo.jpg" />
+<meta name="twitter:creator" content="@forumcube_team" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.forumcube.com/#organization","name":"ForumCube","url":"https://www.forumcube.com/","sameAs":["https://www.facebook.com/forumcube","https://twitter.com/forumcube_team"],"logo":{"@type":"ImageObject","@id":"https://www.forumcube.com/#logo","url":"https://www.forumcube.com/wp-content/uploads/2015/03/squre-logo.jpg","width":1200,"height":1200,"caption":"ForumCube"},"image":{"@id":"https://www.forumcube.com/#logo"}},{"@type":"WebSite","@id":"https://www.forumcube.com/#website","url":"https://www.forumcube.com/","name":"ForumCube","description":"vBulletin &amp; Xenforo Service Provider","publisher":{"@id":"https://www.forumcube.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://www.forumcube.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.forumcube.com/#webpage","url":"https://www.forumcube.com/","inLanguage":"en-US","name":"Custom Xenforo Forum | Vbulletin Forum Development","isPartOf":{"@id":"https://www.forumcube.com/#website"},"about":{"@id":"https://www.forumcube.com/#organization"},"datePublished":"2018-04-05T19:47:39+00:00","dateModified":"2019-08-19T11:56:54+00:00","description":"ForumCube is specialized in Custom Xenforo Forum Development, Vbulletin Forum Development, and Xenforo Plugin Development for your community."}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Forumcube &raquo; Feed" href="https://www.forumcube.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Forumcube &raquo; Comments Feed" href="https://www.forumcube.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.forumcube.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.4"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.forumcube.com/wp-includes/css/dist/block-library/style.min.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css'  href='https://www.forumcube.com/wp-content/plugins/cookie-notice/css/front.min.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='edd-styles-css'  href='https://www.forumcube.com/wp-content/plugins/easy-digital-downloads/templates/edd.min.css?ver=2.9.23' type='text/css' media='all' />
+<link rel='stylesheet' id='fc-style-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_98201e1957f0f76d3e7dacd0024457b9.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css'  href='https://www.forumcube.com/wp-content/themes/forumcube/assets/css/bootstrap.min.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_578ecb25159f7086d49fdab858d420d8.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='owl.carousel-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_dca6879e353813cd8c2c3205f3fb5a3f.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='animate-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_79b074f1c5ad43a411ec8b93e884626b.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='fc-custom-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_473c9e18f9d9b19458b1c3069889d84e.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_cf8c5238405c3773ada4985d3b0f4f4e.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='webfonts/fonts-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_9e53e378f0fe3e4db262cb3b3703956d.css?ver=5.3.4' type='text/css' media='all' />
+<link rel='stylesheet' id='ekko-lightbox-css-css'  href='https://www.forumcube.com/wp-content/cache/autoptimize/css/autoptimize_single_9814a8f6ef2b4cf492a7e0fd3262b16b.css?ver=5.3.4' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxUrl":"https:\/\/www.forumcube.com\/wp-admin\/admin-ajax.php","nonce":"d6a6e2ff2e","hideEffect":"fade","position":"bottom","onScroll":"0","onScrollOffset":"100","onClick":"0","cookieName":"cookie_notice_accepted","cookieTime":"2592000","cookieTimeRejected":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"0","cache":"0","refuse":"0","revokeCookies":"0","revokeCookiesOpt":"automatic","secure":"1","coronabarActive":"0"};
+/* ]]> */
+</script>
+
+<script type='text/javascript' src='https://www.forumcube.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+
+<link rel='https://api.w.org/' href='https://www.forumcube.com/wp-json/' />
+<meta name="generator" content="WordPress 5.3.4" />
+<link rel='shortlink' href='https://www.forumcube.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.forumcube.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.forumcube.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.forumcube.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.forumcube.com%2F&#038;format=xml" />
+<meta name="generator" content="Easy Digital Downloads v2.9.23" />
+     
+     <!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '425138381586519');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=425138381586519&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+    <link rel="icon" href="https://www.forumcube.com/wp-content/uploads/2015/02/favicon-72x72.png" sizes="32x32" />
+<link rel="icon" href="https://www.forumcube.com/wp-content/uploads/2015/02/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.forumcube.com/wp-content/uploads/2015/02/favicon.png" />
+<meta name="msapplication-TileImage" content="https://www.forumcube.com/wp-content/uploads/2015/02/favicon.png" />
+		<style type="text/css" id="wp-custom-css">
+			.single-download .download-sidebar .main_box ul li:nth-child(1),  .single-download .download-sidebar .main_box ul li:nth-child(3){
+	pointer-events: none;
+}
+
+.single-download .download-sidebar .top_box h2 {
+display: none;
+}
+
+.single-download .download-sidebar .download-inner {
+position: relative !important;
+}
+
+.single-download .download_button .view_demo {
+display: none;
+}
+
+.single-download .download-sidebar .main_box ul li:nth-child(2) a {
+display: none;
+}
+.wysiwyg-sec span{
+	display:block;
+}		</style>
+		</head>
+
+<body class="home page-template-default page page-id-4948 wp-custom-logo cookies-set cookies-accepted">
+<!--============== header ===========-->
+
+<header id="top" class="hero-header">
+	        <div class="header-bg">
+			            <div class="bg-img" style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/04/sev-header.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover; background-color: transparent"></div>
+            <div class="hero-overlay" style="background: rgba(0,29,51,0.92)"></div>
+        </div>
+	
+    <div class="header-menu">
+        <nav class="navbar main-nav navbar-fixed-top menu-blue menu-trans">
+            <div class="container">
+                <!--Mobile Menu Start-->
+                <div class="mobileMenu">
+
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span>
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="mobileLogo">
+	                        <a href="https://www.forumcube.com/" class="navbar-brand" rel="home"><img width="206" height="44" src="https://www.forumcube.com/wp-content/uploads/2018/06/cropped-site-logo.png" class="site-logo" alt="Forumcube" /></a>                        </div>
+
+                        <!-- Overlay content -->
+                        <div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="overlay-content "><li id="menu-item-5101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4948 current_page_item menu-item-5101"><a href="https://www.forumcube.com/" aria-current="page">Home</a></li>
+<li id="menu-item-5105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5105"><a href="https://www.forumcube.com/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-5459" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5459"><a href="https://www.forumcube.com/services/custom-forum-theme-skin-template/">Xenforo Themes / Skin / Forum Template</a></li>
+	<li id="menu-item-5460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5460"><a href="https://www.forumcube.com/services/custom-plugin-mod-extension-development/">Custom Plugin / MOD / Extension Development</a></li>
+	<li id="menu-item-5461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5461"><a href="https://www.forumcube.com/services/forum-install-setup/">Xenforo Installation &#038; Forum Setup</a></li>
+	<li id="menu-item-5462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5462"><a href="https://www.forumcube.com/services/forum-transfer-migration/">Xenforo|Vbulletin Forum Transfer &#038; Migration</a></li>
+	<li id="menu-item-5463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5463"><a href="https://www.forumcube.com/services/update-forum-services/">Update Forum Services</a></li>
+</ul>
+</li>
+<li id="menu-item-5104" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5104"><a href="https://www.forumcube.com/who-we-are/">Who We Are</a></li>
+<li id="menu-item-5103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5103"><a href="https://www.forumcube.com/contact-us/">Contact Us</a></li>
+</ul></div>
+                    </div>
+
+                </div>
+
+                <!--Mobile Menu End-->
+
+                <div class="navbar-header">
+                    <a href="https://www.forumcube.com/" class="navbar-brand" rel="home"><img width="206" height="44" src="https://www.forumcube.com/wp-content/uploads/2018/06/cropped-site-logo.png" class="site-logo" alt="Forumcube" /></a>                </div>
+
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="menu-main-menu-container"><ul id="menu-main-menu" class="nav navbar-nav navbar-right"><li id="menu-item-4288" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-4288"><a href="https://www.forumcube.com/" aria-current="page">Home</a></li>
+<li id="menu-item-4293" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4293"><a href="https://www.forumcube.com/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-4295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4295"><a href="https://www.forumcube.com/services/custom-plugin-mod-extension-development/">Custom Plugin / MOD / Extension Development</a></li>
+	<li id="menu-item-4296" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4296"><a href="https://www.forumcube.com/services/custom-forum-theme-skin-template/">Xenforo Themes / Skin / Forum Template</a></li>
+	<li id="menu-item-4301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4301"><a href="https://www.forumcube.com/services/forum-transfer-migration/">Xenforo|Vbulletin Forum Transfer &#038; Migration</a></li>
+	<li id="menu-item-4298" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4298"><a href="https://www.forumcube.com/services/forum-install-setup/">Xenforo Installation &#038; Forum Setup</a></li>
+	<li id="menu-item-4304" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4304"><a href="https://www.forumcube.com/services/update-forum-services/">Update Forum Services</a></li>
+</ul>
+</li>
+<li id="menu-item-4292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4292"><a href="https://www.forumcube.com/who-we-are/">Who We Are</a></li>
+<li id="menu-item-4718" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4718"><a href="https://www.forumcube.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-5404" class="myacc-btn menu-item menu-item-type-post_type menu-item-object-page menu-item-5404"><a href="https://www.forumcube.com/checkout/purchase-history/">My Account</a></li>
+</ul></div>                </div>
+                <!--/.nav-collapse <-->
+            </div>
+        </nav><!-- end of main-nav-->
+
+            <div class="header-content">
+        <div class="container">
+            <div class="content">
+                <h1 class="wow fadeInDown"
+                    data-wow-delay=".3s">We Build Custom Solutions </h1>
+				                        <span class="wow fadeInDown "
+                              data-wow-delay=".5s">Creativity is one of our products as we improve employee efficiency & excite your customers. </span>
+					                        <span class="wow fadeInDown "
+                              data-wow-delay=".5s">We have an approach towards enhancing your business because customer care is our hobby.</span>
+					                        <span class="wow fadeInDown "
+                              data-wow-delay=".5s">We have a Team of Passionate and Dexterous Developers.</span>
+									            </div>
+        </div>
+    </div><!--end of header-content-->
+    <!-- Header bottom bar-->
+    <div class="header-bottom-curve"></div>
+
+    </div><!-- end of heder-menu-->
+
+</header>
+<div class="fc-home-main-content">
+        <section class="fc-section  ">
+            			                <div class="fc-wrapper">
+										                    <div class="container">
+                        <div class="tabs-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">Expertise of ForumCube</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">We help to build Custom Communities & Forums for major clients across all sectors - and solve your Project's Problems with our enthusiastic Team Services.</p>
+							
+    <div class="wow fadeInDown" data-wow-delay="1s">
+        <ul class="nav nav-tabs responsive">
+			                <li class="tab-tab-custom-development green active">
+                    <a href="#custom-development"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s3.png')"
+                       data-toggle="tab">
+						Custom Development                    </a>
+                </li>
+			                <li class="tab-tab-custom-design black">
+                    <a href="#custom-design"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s4.png')"
+                       data-toggle="tab">
+						Custom Design                    </a>
+                </li>
+			                <li class="tab-tab-forum-migration yellow">
+                    <a href="#forum-migration"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s6.png')"
+                       data-toggle="tab">
+						Forum Migration                    </a>
+                </li>
+			                <li class="tab-tab-update-forum gray">
+                    <a href="#update-forum"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s2.png')"
+                       data-toggle="tab">
+						Update Forum                    </a>
+                </li>
+			                <li class="tab-tab-install-setup pink">
+                    <a href="#install-setup"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s1.png')"
+                       data-toggle="tab">
+						Install & Setup                    </a>
+                </li>
+			                <li class="tab-tab-admin-support ">
+                    <a href="#admin-support"
+                       style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/06/s5.png')"
+                       data-toggle="tab">
+						Admin & Support                    </a>
+                </li>
+			        </ul>
+
+        <div class="tab-content responsive">
+			                <div class="tab-pane tab-content-admin-support active"
+                     id="custom-development">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service3.png"
+                                 alt="Custom Development"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Custom Xenforo Forum & Vbulletin Forum</h3>
+                        <p>We are a creative Web Development Company; passionate about delivering successful, efficient & winning solutions for our Clients. ForumCube offers a full spectrum of application design, solution development, website maintenance & support services. We provide exceptional branding, innovative custom Xenforo plugin / Xenforo Mod / Xenforo Extension development / Vbulletin Forum & web solutions to meet client’s expectations.
+You know your business, but we know how to develop, customize your awesome ideas & polish them for the growth of your business.
+We align our concepts and experience with your business needs to recommend tailored solutions thus becoming part of your business success.
+</p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/services/custom-plugin-mod-extension-development/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                                    								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			                <div class="tab-pane tab-content-admin-support"
+                     id="custom-design">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service4.png"
+                                 alt="Custom Design"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Custom Theme & Template Design</h3>
+                        <p>When a user lands on your website, the design is one of the convincing factors that compel the user to stay on your web & you can grab the user's attention towards any call to action. The good part!  We know how to build those designs. We can craft a theme design for your platform to give it a new life and better usability. We have a resource in UI & UX who can translate your ideas into a brand.  
+Our creative team of web designing experts aim to combine technical proficiency with creativity to design something extraordinary; proper integration of a website style will completely change the look and feel of your forum/website. </p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/services/custom-forum-theme-skin-template/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                                    								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			                <div class="tab-pane tab-content-admin-support"
+                     id="forum-migration">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service8.png"
+                                 alt="Forum Migration"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Forum Migration</h3>
+                        <p>Migrations need deeper analysis of the past, present & future of any forum. Tiny diversion can lead to massive drop in SEO rankings and loss of clientage on community. We encourage our clients to test run these on our resources before having a go ahead for the production environment. We keep our development environments up to date to meet the current expectations of our clients. Every single possible aspect is monitored and proper solutions are deployed to achieve the desired results. We guarantee 100% satisfaction as we value your time & invest our best to fully optimize migrations.</p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/services/forum-transfer-migration/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			                <div class="tab-pane tab-content-admin-support"
+                     id="update-forum">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service2.png"
+                                 alt="Update Forum"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Update Forum Services</h3>
+                        <p>Are you looking to update forum to latest version and need reliable and experienced team to do it? You've reached the right place! Keeping your applications and extensions up to date is very important to stay secure & enjoy the latest features. We take care; all the complex parts of this process and complete the upgrade with zero downtime.</p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/services/update-forum-services/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                                    								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			                <div class="tab-pane tab-content-admin-support"
+                     id="install-setup">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service1.png"
+                                 alt="Install & Setup"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Forum Installation Services</h3>
+                        <p>We provide forum installation & setup services for any online forum platform. We will give you tailored & optimized forum that is ready to go. Our forum installation service gives you a simple, quick & secure way of getting forum setup without hassle. ForumCube team has years of experience specifically dealing in forums for different platforms namely Xenforo, My BB, Vbulletin, PHPBB, etc. We have clientele in mostly each industry.</p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/services/forum-install-setup/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                                    								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			                <div class="tab-pane tab-content-admin-support"
+                     id="admin-support">
+					                        <div class="tabs-content-img left-side">
+                            <img class="img-responsive"
+                                 src="https://www.forumcube.com/wp-content/uploads/2018/06/service5.png"
+                                 alt="Admin & Support"
+                                 width="391">
+                        </div>
+					                    <div class="tabs-right-content right-side">
+                        <h3>Support Services</h3>
+                        <p>Our technical team is fully capable to provide support services at each level. We are providing managed hosting services to clients ranging from small communities to large scale discussion portfolios. We let our customers to work on expanding their business while we take care of web security, upgrades & Maintenance.        
+ 
+Get in touch & find out more about how we can work together on your web project. We build pride for businesses across the globe. Share challenges and opportunities with us and we will discuss ways to find an appropriate web solution to take your business to the next level.
+</p>
+
+                        <div class="forum-services-wrap">
+							                            <div class="clear"></div>
+                            <div class="fc-btn-grp">
+								                                    <a href="https://www.forumcube.com/contact-us/"
+                                       class="fc-btn bg-gray  card__back white-arrow">
+                                                      <span data-hover="Read More">
+                                                        Read More
+                                                      </span>
+                                    </a>
+								
+								                                    								                            </div>
+                        </div>
+                    </div>
+
+                </div>
+			        </div>
+
+    </div><!-- /home-tabs -->
+
+                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	        <section class="fc-section fc_ourClients ">
+            <div class="fc-misc pink-l-plane left-top-misc wow slideInLeft"></div>			            <div class="fc-curve-sec "
+                 style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/04/client-bg.jpg'); background-color: transparent">
+									                        <div class="sec-overlay" style="background: rgba(0,59,66,0.9)"></div>
+					                    <div class="container">
+                        <div class="logos-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">Our Clients</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">We did a great Job for these Clients. </p>
+							<!-- Slider-->
+    <div class="fc-owl-slider owl-carousel owl-theme simple-logos">
+		            <div class="item wow fadeInDown" data-wow-delay=".2s">
+                    <div class="img-child ">
+                        <a href=" http://pugski.com/" target="_blank"><img
+                                src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-3.png"
+                                alt="Pugski " title="Pugski ">
+                        </a>
+                    </div>
+            </div>
+		            <div class="item wow fadeInDown" data-wow-delay=".2s">
+                    <div class="img-child ">
+                        <a href="https://www.ozdoc.com/forum/index.php" target="_blank"><img
+                                src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-1-2.png"
+                                alt="ozdoc" title="ozdoc">
+                        </a>
+                    </div>
+            </div>
+		            <div class="item wow fadeInDown" data-wow-delay=".2s">
+                    <div class="img-child ">
+                        <a href="https://www.overlandbound.com/" target="_blank"><img
+                                src="https://www.forumcube.com/wp-content/uploads/2018/07/OBForumLogo-1.png"
+                                alt="overlandbound" title="overlandbound">
+                        </a>
+                    </div>
+            </div>
+		            <div class="item wow fadeInDown" data-wow-delay=".2s">
+                    <div class="img-child ">
+                        <a href="https://forum.dealerrefresh.com/" target="_blank"><img
+                                src="https://www.forumcube.com/wp-content/uploads/2018/07/logo-2-1.png"
+                                alt="dealerrefresh" title="dealerrefresh">
+                        </a>
+                    </div>
+            </div>
+		            <div class="item wow fadeInDown" data-wow-delay=".2s">
+                    <div class="img-child ">
+                        <a href="https://www.motorhomehelp.com/" target="_blank"><img
+                                src="https://www.forumcube.com/wp-content/uploads/2018/07/motorhome-forum-help.png"
+                                alt="motorhomehelp" title="motorhomehelp">
+                        </a>
+                    </div>
+            </div>
+		    </div><!-- /#fc-owl-slider-->
+
+<!--<div class="clear"></div>-->
+<!--<div class="fc-btn-grp wow fadeInDown " data-wow-delay=".7s">-->
+<!--    <a href="--><!--" class="fc-btn bg-gray  card__back white-arrow">View-->
+<!--        All</a>-->
+<!--    <a href="--><!--" class="fc-btn bg-green white-arrow">Lets-->
+<!--        Start Your Project</a>-->
+<!--</div>-->                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	        <section class="fc-section choose-us-wrap ">
+            			                <div class="fc-wrapper">
+										                    <div class="container">
+                        <div class="cols-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">More Than Just Another Development Company</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">At Forumcube, we’re passionately committed to exploring, nurturing and exploiting new ideas.
+
+</p>
+							<div class="col-logo chain-cols row all-install-sev">
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/design-icons.png" alt="ins-icon">
+              
+                </div>
+	                                <p class="ins-head">Creativity</p>
+	                                <p class="ins-des">Creativity is in our company's genes, so we reflect that with every product we produce.</p>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/user-friendly-icon.png" alt="ins-icon">
+              
+                </div>
+	                                <p class="ins-head">User Friendly</p>
+	                                <p class="ins-des">Our experience of more than 8 years gives us power to develop what works best for your users.</p>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/cleancode.png" alt="ins-icon">
+              
+                </div>
+	                                <p class="ins-head">Clean Code</p>
+	                                <p class="ins-des">We craft code which is as per latest web standards & easy to maintain.</p>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/support.png" alt="ins-icon">
+              
+                </div>
+	                                <p class="ins-head">Excellent Support</p>
+	                                <p class="ins-des">Friendly support staff is just a click away when you work with us.</p>
+	                        </div>
+
+        </div>
+	
+</div><!-- col-md-12 all-install-sev -->                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	        <section class="fc-section fc-mb100 project-mind-wrap ">
+            <div class="fc-misc blue-l-plane right-bottom-misc wow slideInRight"></div>			            <div class="fc-curve-sec "
+                 style="background-image: url('https://www.forumcube.com/wp-content/uploads/2018/04/project-bg.jpg'); background-color: transparent">
+									                        <div class="sec-overlay" style="background: rgba(50,43,255,0.9)"></div>
+					                    <div class="container">
+                        <div class="wysiwyg-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">Tell Us About Your Project</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">Have a Project in Mind? We'd Love To Make Your Ideas Into Reality. Let's Talk !</p>
+							<div class="fc-form wow fadeInDown" data-wow-delay=".5s">
+		
+                <div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1' style='display:none'><div id='gf_1' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_1' id='gform_1'  action='/#gf_1'>
+                        <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_2'  class='gfield gf_left_half hidden_field gfield_contains_required field_sublabel_below field_description_above gfield_visibility_visible' ><label class='gfield_label' for='input_1_2' >Platform<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_2' id='input_1_2' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='' >Choose your Platform</option><option value='vbulletin' >vBulletin</option><option value='xenforo' >XenForo</option><option value='invision-board' >IPBoard</option><option value='bbpress' >BBPress</option><option value='simple-machines' >Simple Machines</option><option value='wordpress' >WordPress</option><option value='phpbb' >phpBB</option><option value='na' selected='selected'>Not Required</option></select></div></li><li id='field_1_3'  class='gfield gf_right_half hidden_field gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_3' >Service<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_3' id='input_1_3' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='' >Choose your Services</option><option value='install-setup' >Installation</option><option value='update-forum' >Upgrade</option><option value='custom-development' >Custom Development</option><option value='custom-design' >Custom Design</option><option value='forum-migration' >Forum Migration</option><option value='contact-us' >Contact Us</option><option value='clean-malware' >Clean infected website</option><option value='free-quote' selected='selected'>Free Quote</option></select></div></li><li id='field_1_7'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>vBulletin Installation</h2></li><li id='field_1_12'  class='gfield gfield_price gfield_price_1_12 gfield_product_1_12 gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_12' >vBulletin version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_12' id='input_1_12' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='3.8.x|29' >3.8.x</option><option value='4.1.x|29' >4.1.x</option><option value='4.2.x|29' >4.2.x</option><option value='5.x|49' >5.x</option><option value='Latest|49' >Latest</option></select></div><div class='gfield_description' id='gfield_description_1_12'>Please select the vBulletin version you want us to install for you</div></li><li id='field_1_14'  class='gfield gf_list_2col gfield_price gfield_price_1_12 gfield_option_1_12 field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Additionals with installation</label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_14'><li class='gchoice_1_14_1'>
+								<input name='input_14.1' type='checkbox'  value='Hosting Setup|10'  id='choice_1_14_1'   />
+								<label for='choice_1_14_1' id='label_1_14_1'>Hosting Setup</label>
+							</li><li class='gchoice_1_14_2'>
+								<input name='input_14.2' type='checkbox'  value='Domain Name Setup|10'  id='choice_1_14_2'   />
+								<label for='choice_1_14_2' id='label_1_14_2'>Domain Name Setup</label>
+							</li><li class='gchoice_1_14_3'>
+								<input name='input_14.3' type='checkbox'  value='Email setup|15'  id='choice_1_14_3'   />
+								<label for='choice_1_14_3' id='label_1_14_3'>Email setup</label>
+							</li><li class='gchoice_1_14_4'>
+								<input name='input_14.4' type='checkbox'  value='Meta description &amp; Keywords setup|10'  id='choice_1_14_4'   />
+								<label for='choice_1_14_4' id='label_1_14_4'>Meta description & Keywords setup</label>
+							</li><li class='gchoice_1_14_5'>
+								<input name='input_14.5' type='checkbox'  value='Google Analytics|10'  id='choice_1_14_5'   />
+								<label for='choice_1_14_5' id='label_1_14_5'>Google Analytics</label>
+							</li><li class='gchoice_1_14_6'>
+								<input name='input_14.6' type='checkbox'  value='Google Webmaster|10'  id='choice_1_14_6'   />
+								<label for='choice_1_14_6' id='label_1_14_6'>Google Webmaster</label>
+							</li><li class='gchoice_1_14_7'>
+								<input name='input_14.7' type='checkbox'  value='SEO plugin installation &amp; Setup|30'  id='choice_1_14_7'   />
+								<label for='choice_1_14_7' id='label_1_14_7'>SEO plugin installation & Setup</label>
+							</li><li class='gchoice_1_14_8'>
+								<input name='input_14.8' type='checkbox'  value='Social media integration|15'  id='choice_1_14_8'   />
+								<label for='choice_1_14_8' id='label_1_14_8'>Social media integration</label>
+							</li></ul></div><div class='gfield_description' id='gfield_description_1_14'>Add these options to get most out of your vBulletin installation</div></li><li id='field_1_16'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>vBulletin Upgrade</h2></li><li id='field_1_17'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_17' >Current vBulletin version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_17' id='input_1_17' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='3.7.x' >3.7.x</option><option value='3.8.x' >3.8.x</option><option value='4.1.x' >4.1.x</option><option value='4.2.x' >4.2.x</option><option value='5.x' >5.x</option></select></div></li><li id='field_1_23'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_23' >Target Version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_23' id='input_1_23' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='1' >Latest 3.8.x</option><option value='3' >Latest 4.x</option><option value='5' >Latest 5.x</option></select></div></li><li id='field_1_24'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_24' >Target Version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_24' id='input_1_24' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='1' >Latest  3.8.x</option><option value='2' >Latest 4.x</option><option value='3' >Latest 5.x</option></select></div></li><li id='field_1_25'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_25' >Target Version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_25' id='input_1_25' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='1' >Latest 4.x</option><option value='2.5' >Latest 5.x</option></select></div></li><li id='field_1_26'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_26' >Target Version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_26' id='input_1_26' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='2' >Latest 5.x</option></select></div></li><li id='field_1_21'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Total Number of posts<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_1_21'><li class='gchoice_1_21_0'><input name='input_21' type='radio' value='30'  id='choice_1_21_0'    /><label for='choice_1_21_0' id='label_1_21_0'>Less then 10,000</label></li><li class='gchoice_1_21_1'><input name='input_21' type='radio' value='60'  id='choice_1_21_1'    /><label for='choice_1_21_1' id='label_1_21_1'>Less then 50,000 but more then 10,000</label></li><li class='gchoice_1_21_2'><input name='input_21' type='radio' value='110'  id='choice_1_21_2'    /><label for='choice_1_21_2' id='label_1_21_2'>Less then 100,000 but more then 50,000</label></li><li class='gchoice_1_21_3'><input name='input_21' type='radio' value='160'  id='choice_1_21_3'    /><label for='choice_1_21_3' id='label_1_21_3'>Less then 10,00,000 but more then 100,000</label></li><li class='gchoice_1_21_4'><input name='input_21' type='radio' value='210'  id='choice_1_21_4'    /><label for='choice_1_21_4' id='label_1_21_4'>More then 10,00,000</label></li></ul></div></li><li id='field_1_27'  class='gfield gf_right_half gfield_price gfield_price_1_27 gfield_product_1_27 gfield_contains_required gfield_calculation field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_27_1' >Upgrade Cost<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_product_calculation'>
+					<input type='hidden' name='input_27.1' value='Upgrade Cost' class='gform_hidden' />
+					<span class='ginput_product_price_label'>Price:</span> <span class='ginput_product_price' id='input_1_27'>$0.00</span>
+					<input type='hidden' name='input_27.2' id='ginput_base_price_1_27' class='gform_hidden' value='$0.00'/>
+					<input type='hidden' name='input_27.3' value='1' class='ginput_quantity_1_27 gform_hidden' />
+				</div></li><li id='field_1_37'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Xenforo Installation</h2></li><li id='field_1_36'  class='gfield gf_list_3col gfield_price gfield_price_1_51 gfield_option_1_51 field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Additions with Basic Xenforo Installation</label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_36'><li class='gchoice_1_36_1'>
+								<input name='input_36.1' type='checkbox'  value='XenForo Media Gallery|15'  id='choice_1_36_1'   />
+								<label for='choice_1_36_1' id='label_1_36_1'>XenForo Media Gallery</label>
+							</li><li class='gchoice_1_36_2'>
+								<input name='input_36.2' type='checkbox'  value='XenForo Resource Manager|15'  id='choice_1_36_2'   />
+								<label for='choice_1_36_2' id='label_1_36_2'>XenForo Resource Manager</label>
+							</li><li class='gchoice_1_36_3'>
+								<input name='input_36.3' type='checkbox'  value='XenForo Enhanced Search|15'  id='choice_1_36_3'   />
+								<label for='choice_1_36_3' id='label_1_36_3'>XenForo Enhanced Search</label>
+							</li><li class='gchoice_1_36_4'>
+								<input name='input_36.4' type='checkbox'  value='Hosting Setup|10'  id='choice_1_36_4'   />
+								<label for='choice_1_36_4' id='label_1_36_4'>Hosting Setup</label>
+							</li><li class='gchoice_1_36_5'>
+								<input name='input_36.5' type='checkbox'  value='Domain Name Setup|10'  id='choice_1_36_5'   />
+								<label for='choice_1_36_5' id='label_1_36_5'>Domain Name Setup</label>
+							</li><li class='gchoice_1_36_6'>
+								<input name='input_36.6' type='checkbox'  value='Email setup|15'  id='choice_1_36_6'   />
+								<label for='choice_1_36_6' id='label_1_36_6'>Email setup</label>
+							</li><li class='gchoice_1_36_7'>
+								<input name='input_36.7' type='checkbox'  value='Meta description &amp; Keywords setup|10'  id='choice_1_36_7'   />
+								<label for='choice_1_36_7' id='label_1_36_7'>Meta description & Keywords setup</label>
+							</li><li class='gchoice_1_36_8'>
+								<input name='input_36.8' type='checkbox'  value='Google Analytics|10'  id='choice_1_36_8'   />
+								<label for='choice_1_36_8' id='label_1_36_8'>Google Analytics</label>
+							</li><li class='gchoice_1_36_9'>
+								<input name='input_36.9' type='checkbox'  value='Google Webmaster|10'  id='choice_1_36_9'   />
+								<label for='choice_1_36_9' id='label_1_36_9'>Google Webmaster</label>
+							</li><li class='gchoice_1_36_11'>
+								<input name='input_36.11' type='checkbox'  value='SEO plugin installation &amp; Setup|30'  id='choice_1_36_11'   />
+								<label for='choice_1_36_11' id='label_1_36_11'>SEO plugin installation & Setup</label>
+							</li><li class='gchoice_1_36_12'>
+								<input name='input_36.12' type='checkbox'  value='Social media integration|15'  id='choice_1_36_12'   />
+								<label for='choice_1_36_12' id='label_1_36_12'>Social media integration</label>
+							</li></ul></div><div class='gfield_description' id='gfield_description_1_36'>Add these options to get most out of your Xenforo installation</div></li><li id='field_1_51'  class='gfield gform_hidden gfield_price gfield_price_1_51 gfield_product_1_51 gfield_hidden_product field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_51_1' >Xenforo</label><input type='hidden' name='input_51.3' value='1' id='ginput_quantity_1_51' class='gform_hidden' /><input type='hidden' name='input_51.1' value='Xenforo' class='gform_hidden' /><input name='input_51.2' id='ginput_base_price_1_51' type='hidden' value='$29.00' class='gform_hidden ginput_amount' /></li><li id='field_1_39'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Xenforo Upgrade</h2></li><li id='field_1_40'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_40' >Current Xenforo Version<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_40' id='input_1_40' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='3' >1.0</option><option value='3' >1.1</option><option value='2' >1.2</option><option value='2' >1.3</option><option value='1' >1.4</option><option value='1' >1.5</option></select></div></li><li id='field_1_41'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Total Number of posts<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_radio'><ul class='gfield_radio' id='input_1_41'><li class='gchoice_1_41_0'><input name='input_41' type='radio' value='30'  id='choice_1_41_0'    /><label for='choice_1_41_0' id='label_1_41_0'>Less then 10,000</label></li><li class='gchoice_1_41_1'><input name='input_41' type='radio' value='60'  id='choice_1_41_1'    /><label for='choice_1_41_1' id='label_1_41_1'>Less then 50,000 but more then 10,000</label></li><li class='gchoice_1_41_2'><input name='input_41' type='radio' value='110'  id='choice_1_41_2'    /><label for='choice_1_41_2' id='label_1_41_2'>Less then 100,000 but more then 50,000</label></li><li class='gchoice_1_41_3'><input name='input_41' type='radio' value='160'  id='choice_1_41_3'    /><label for='choice_1_41_3' id='label_1_41_3'>Less then 10,00,000 but more then 100,000</label></li><li class='gchoice_1_41_4'><input name='input_41' type='radio' value='210'  id='choice_1_41_4'    /><label for='choice_1_41_4' id='label_1_41_4'>More then 10,00,000</label></li></ul></div></li><li id='field_1_42'  class='gfield gf_right_half gfield_price gfield_price_1_42 gfield_product_1_42 gfield_contains_required gfield_calculation field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_42_1' >Product Name<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_product_calculation'>
+					<input type='hidden' name='input_42.1' value='Product Name' class='gform_hidden' />
+					<span class='ginput_product_price_label'>Price:</span> <span class='ginput_product_price' id='input_1_42'>$0.00</span>
+					<input type='hidden' name='input_42.2' id='ginput_base_price_1_42' class='gform_hidden' value='$0.00'/>
+					<input type='hidden' name='input_42.3' value='1' class='ginput_quantity_1_42 gform_hidden' />
+				</div></li><li id='field_1_28'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Your info</h2></li><li id='field_1_29'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label gfield_label_before_complex'  >Name<span class='gfield_required'>*</span></label><div class='ginput_complex ginput_container no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name' id='input_1_29'>
+                            
+                            <span id='input_1_29_3_container' class='name_first' >
+                                                    <input type='text' name='input_29.3' id='input_1_29_3' value='' aria-label='First name'   aria-required="true" aria-invalid="false" placeholder='Enter your First Name'/>
+                                                    <label for='input_1_29_3' >First</label>
+                                                </span>
+                            
+                            <span id='input_1_29_6_container' class='name_last' >
+                                                    <input type='text' name='input_29.6' id='input_1_29_6' value='' aria-label='Last name'   aria-required="true" aria-invalid="false" placeholder='Enter you Last name'/>
+                                                    <label for='input_1_29_6' >Last</label>
+                                                </span>
+                            
+                        </div></li><li id='field_1_30'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_30' >Email<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_30' id='input_1_30' type='text' value='' class='medium'   placeholder='Enter Your Email' aria-required="true" aria-invalid="false" />
+                        </div></li><li id='field_1_31'  class='gfield gf_right_half field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_31' >Phone</label><div class='ginput_container ginput_container_phone'><input name='input_31' id='input_1_31' type='text' value='' class='medium'  placeholder='Phone'  aria-invalid="false"  /></div></li><li id='field_1_48'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Technical Details</h2></li><li id='field_1_49'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_49' >Platform<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_49' id='input_1_49' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='vBulletin' >vBulletin</option><option value='Xenforo' >Xenforo</option><option value='IPboard' >IPboard</option><option value='BBpress' >BBpress</option><option value='phpBB' >phpBB</option><option value='Other' >Other</option></select></div></li><li id='field_1_50'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_50' >Service<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_50' id='input_1_50' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='Custom Design' >Custom Design</option><option value='Custom Development' >Custom Development</option><option value='Migration' >Migration</option><option value='Management / Maintenance' >Management / Maintenance</option><option value='Other' >Other</option></select></div></li><li id='field_1_32'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Request Details</h2></li><li id='field_1_33'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_33' >Requirement Details<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_33' id='input_1_33' class='textarea medium'    placeholder='Please describe your requirements in as much detail as possible so our staff can help you better.' aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id='field_1_34'  class='gfield field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_34' >Captcha</label><div id='input_1_34' class='ginput_container ginput_recaptcha' data-sitekey='6LeccWUUAAAAAP6xJ9k8qcy0mM4z7DCvR3F4P_dk'  data-theme='light' data-tabindex='0'  data-badge=''></div></li><li id='field_1_43'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Technical Information</h2></li><li id='field_1_45'  class='gfield gf_left_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_45' >Website<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_website'>
+                    <input name='input_45' id='input_1_45' type='text' value='' class='medium'     aria-required="true" aria-invalid="false"/>
+                </div></li><li id='field_1_44'  class='gfield gf_right_half gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_44' >Hosting Type<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_select'><select name='input_44' id='input_1_44' class='medium gfield_select'   aria-required="true" aria-invalid="false"><option value='1' >Shared Hosting</option><option value='2' >VPS</option><option value='3' >Dedicated Server</option><option value='3.5' >Cloud</option></select></div></li><li id='field_1_46'  class='gfield gf_list_2col gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  >Infection Type<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_46'><li class='gchoice_1_46_1'>
+								<input name='input_46.1' type='checkbox'  value='40'  id='choice_1_46_1'   />
+								<label for='choice_1_46_1' id='label_1_46_1'>Blackhat SEO SPAM Injections</label>
+							</li><li class='gchoice_1_46_2'>
+								<input name='input_46.2' type='checkbox'  value='60'  id='choice_1_46_2'   />
+								<label for='choice_1_46_2' id='label_1_46_2'>Search Engine Blacklisting (Google, Bing, Yahoo, etc)</label>
+							</li><li class='gchoice_1_46_3'>
+								<input name='input_46.3' type='checkbox'  value='40'  id='choice_1_46_3'   />
+								<label for='choice_1_46_3' id='label_1_46_3'>Desktop AntiVirus Blacklisting (i.e., AVG, Norton, McAfee)</label>
+							</li><li class='gchoice_1_46_4'>
+								<input name='input_46.4' type='checkbox'  value='80'  id='choice_1_46_4'   />
+								<label for='choice_1_46_4' id='label_1_46_4'>Cross-Site Scripting (XSS) Infections</label>
+							</li><li class='gchoice_1_46_5'>
+								<input name='input_46.5' type='checkbox'  value='40'  id='choice_1_46_5'   />
+								<label for='choice_1_46_5' id='label_1_46_5'>Backdoors</label>
+							</li><li class='gchoice_1_46_6'>
+								<input name='input_46.6' type='checkbox'  value='80'  id='choice_1_46_6'   />
+								<label for='choice_1_46_6' id='label_1_46_6'>Phishing Lures</label>
+							</li><li class='gchoice_1_46_7'>
+								<input name='input_46.7' type='checkbox'  value='130'  id='choice_1_46_7'   />
+								<label for='choice_1_46_7' id='label_1_46_7'>Infected Database / SQL Injections</label>
+							</li><li class='gchoice_1_46_8'>
+								<input name='input_46.8' type='checkbox'  value='80'  id='choice_1_46_8'   />
+								<label for='choice_1_46_8' id='label_1_46_8'>Malicious Redirects</label>
+							</li><li class='gchoice_1_46_9'>
+								<input name='input_46.9' type='checkbox'  value='200'  id='choice_1_46_9'   />
+								<label for='choice_1_46_9' id='label_1_46_9'>Hijacked Websites</label>
+							</li><li class='gchoice_1_46_11'>
+								<input name='input_46.11' type='checkbox'  value='150'  id='choice_1_46_11'   />
+								<label for='choice_1_46_11' id='label_1_46_11'>Email SPAM Abuse</label>
+							</li><li class='gchoice_1_46_12'>
+								<input name='input_46.12' type='checkbox'  value='100'  id='choice_1_46_12'   />
+								<label for='choice_1_46_12' id='label_1_46_12'>Dirty Search Engine Results</label>
+							</li><li class='gchoice_1_46_13'>
+								<input name='input_46.13' type='checkbox'  value='80'  id='choice_1_46_13'   />
+								<label for='choice_1_46_13' id='label_1_46_13'>Obfuscated JavaScript Injections</label>
+							</li><li class='gchoice_1_46_14'>
+								<input name='input_46.14' type='checkbox'  value='200'  id='choice_1_46_14'   />
+								<label for='choice_1_46_14' id='label_1_46_14'>Embedded Trojans</label>
+							</li><li class='gchoice_1_46_15'>
+								<input name='input_46.15' type='checkbox'  value='80'  id='choice_1_46_15'   />
+								<label for='choice_1_46_15' id='label_1_46_15'>Hidden & Malicious iFrames</label>
+							</li><li class='gchoice_1_46_16'>
+								<input name='input_46.16' type='checkbox'  value='80'  id='choice_1_46_16'   />
+								<label for='choice_1_46_16' id='label_1_46_16'>Drive-by-Download Injections</label>
+							</li><li class='gchoice_1_46_17'>
+								<input name='input_46.17' type='checkbox'  value='60'  id='choice_1_46_17'   />
+								<label for='choice_1_46_17' id='label_1_46_17'>Redirections Targeting Mobile Devices</label>
+							</li></ul></div></li><li id='field_1_47'  class='gfield gfield_price gfield_price_1_47 gfield_product_1_47 gfield_contains_required gfield_calculation field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_47_1' >Site Cleaning Cost<span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_product_calculation'>
+					<input type='hidden' name='input_47.1' value='Site Cleaning Cost' class='gform_hidden' />
+					<span class='ginput_product_price_label'>Price:</span> <span class='ginput_product_price' id='input_1_47'>$0.00</span>
+					<input type='hidden' name='input_47.2' id='ginput_base_price_1_47' class='gform_hidden' value='$0.00'/>
+					<input type='hidden' name='input_47.3' value='1' class='ginput_quantity_1_47 gform_hidden' />
+				</div></li><li id='field_1_10'  class='gfield gsection fc_formHeading field_sublabel_below field_description_below gfield_visibility_visible' ><h2 class='gsection_title'>Order Details</h2></li><li id='field_1_11'  class='gfield gfield_price gfield_price_1_ gfield_total gfield_total_1_ field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_11' >Total</label><div class='ginput_container ginput_container_total'>
+						<span class='ginput_total ginput_total_1' aria-live='polite'>$0.00</span>
+						<input type='hidden' name='input_11' id='input_1_11' class='gform_hidden'/>
+					</div></li><li id='field_1_15'  class='gfield gfield_contains_required field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label'  ><span class='gfield_required'>*</span></label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_1_15'><li class='gchoice_1_15_1'>
+								<input name='input_15.1' type='checkbox'  value='By checking this box you agreed to our terms of services and non refundable policy'  id='choice_1_15_1'   />
+								<label for='choice_1_15_1' id='label_1_15_1'>By checking this box you agreed to our terms of services and non refundable policy</label>
+							</li></ul></div></li><li id='field_1_52'  class='gfield gform_validation_container field_sublabel_below field_description_below gfield_visibility_visible' ><label class='gfield_label' for='input_1_52' >Phone</label><div class='ginput_container'><input name='input_52' id='input_1_52' type='text' value='' /></div><div class='gfield_description' id='gfield_description__52'>This field is for validation purposes and should be left unchanged.</div></li>
+                            </ul></div>
+        <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Submit'  onclick='if(window["gf_submitting_1"]){return false;}  window["gf_submitting_1"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_1"]){return false;} window["gf_submitting_1"]=true;  jQuery("#gform_1").trigger("submit",[true]); }' /> <input type='hidden' name='gform_ajax' value='form_id=1&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_1' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='1' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_1' value='WyJ7XCIxMlwiOltcIjZmYzFlZjBjZmEwMTYzMThmODcwNWZlN2E0MmJlNjNkXCIsXCI5ZDc2MmU2NTQ0ZTgxYTJjOWNkYzMzZTQ2YzAxM2EwM1wiLFwiNmRjMmZkYzRiODA1M2Q1N2NkZWZiZGVmM2ViYjRjZTJcIixcIjEyNWQzMzFjYTUwNzNkYzVmNjZmNDQ5MGY2MTkyYTg1XCIsXCI2MDI3MzFkZGRjYmM2NTdmNzg2MTM1YTY1ZjllODQ5OVwiXSxcIjE0LjFcIjpcIjFjZGQ5N2U1MGEzOTFhM2Y3ODUyZmQ2MGFhY2VmNjNiXCIsXCIxNC4yXCI6XCI0YmM0NjMxMjc3OTA1ZTE3OGMzZGFkY2EwMjJmYWVkMVwiLFwiMTQuM1wiOlwiYzYzOTNmODlhMTYxMTAzNDgyZTMxMjVjMTQ4NWJiM2JcIixcIjE0LjRcIjpcImM5NWRhNDUxYWNmYjc4ZDE3ZmU5MDZhYzYzN2Y4YjQ3XCIsXCIxNC41XCI6XCJkNTI0MWE1ZWM0YzJjZjRmZjFmYjVjOTJhYzU3N2MzY1wiLFwiMTQuNlwiOlwiMDE4MTM3MzA5MjM0YmM5YmIzMzVjYjFiODZiZmRlNDZcIixcIjE0LjdcIjpcIjIwZjU2MjRhOTExOGM5NzI4NjU5YzhhM2E2ODVkMWMzXCIsXCIxNC44XCI6XCI5Y2Y1NGE3ODAwZjJmM2RiNGMwZGU4N2Y3MDc5MmUyZVwiLFwiMjcuMVwiOlwiMmM2NWZmYjQ0NWIyNDJlYTJhNjI1MWM1M2ViOWJhYmVcIixcIjI3LjJcIjpcIjA0YjgyNDVkM2JlMjdiODQwMTQ0MjYwOTM4ODQ1MDY4XCIsXCIzNi4xXCI6XCIwMjcwOWM1MjQyMWZlOTNhZGI5Yjg5NmRkZTMwYTAyMlwiLFwiMzYuMlwiOlwiN2RiYmM5MjkzZDk2MjkzNGEzMzRmYTAxODY4ODk4NzRcIixcIjM2LjNcIjpcIjRhZWEzMzY4ZTc0ZjE3ZGQ3ZDhmMDIwYjFkOWM1Yzg0XCIsXCIzNi40XCI6XCIxY2RkOTdlNTBhMzkxYTNmNzg1MmZkNjBhYWNlZjYzYlwiLFwiMzYuNVwiOlwiNGJjNDYzMTI3NzkwNWUxNzhjM2RhZGNhMDIyZmFlZDFcIixcIjM2LjZcIjpcImM2MzkzZjg5YTE2MTEwMzQ4MmUzMTI1YzE0ODViYjNiXCIsXCIzNi43XCI6XCJjOTVkYTQ1MWFjZmI3OGQxN2ZlOTA2YWM2MzdmOGI0N1wiLFwiMzYuOFwiOlwiZDUyNDFhNWVjNGMyY2Y0ZmYxZmI1YzkyYWM1NzdjM2NcIixcIjM2LjlcIjpcIjAxODEzNzMwOTIzNGJjOWJiMzM1Y2IxYjg2YmZkZTQ2XCIsXCIzNi4xMVwiOlwiMjBmNTYyNGE5MTE4Yzk3Mjg2NTljOGEzYTY4NWQxYzNcIixcIjM2LjEyXCI6XCI5Y2Y1NGE3ODAwZjJmM2RiNGMwZGU4N2Y3MDc5MmUyZVwiLFwiNTEuMVwiOlwiYzkwZjQ3YzM3Nzk5YWJiYTA2OTAyNDhjNjMxYTg4ZjBcIixcIjUxLjJcIjpcIjJmZDJiM2UzNjg4M2FiNzdjOTg0YWRlZDQ3NTMzMThjXCIsXCI0Mi4xXCI6XCIzMDc1YTYzY2VkOTY3YzNjYzRjMTk1MTNjMmYwZWY0N1wiLFwiNDIuMlwiOlwiMDRiODI0NWQzYmUyN2I4NDAxNDQyNjA5Mzg4NDUwNjhcIixcIjQ3LjFcIjpcImFjMDgwOTQ0ZGY3ZGE5MmIzM2EwMjYxZDYyZjY4ZDJlXCIsXCI0Ny4yXCI6XCIwNGI4MjQ1ZDNiZTI3Yjg0MDE0NDI2MDkzODg0NTA2OFwifSIsIjc2MWY1NjAwOTAyYjVkODI0MTBmZTkzMmU3YzUzZGRjIl0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1' />
+            <input type='hidden' name='gform_field_values' value='platform=na&amp;service=free-quote' />
+            
+        </div>
+                        </form>
+                        </div>
+                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_1' id='gform_ajax_frame_1' title='This iframe contains the logic required to handle Ajax powered Gravity Forms.'></iframe>
+                <script type='text/javascript'>jQuery(document).ready(function($){gformInitSpinner( 1, 'https://www.forumcube.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery('#gform_ajax_frame_1').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_1');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_1').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_1').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_1').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_1').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_1').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_1').val();gformInitSpinner( 1, 'https://www.forumcube.com/wp-content/plugins/gravityforms/images/spinner.gif' );jQuery(document).trigger('gform_page_loaded', [1, current_page]);window['gf_submitting_1'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_1').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_1').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [1]);window['gf_submitting_1'] = false;}, 50);}else{jQuery('#gform_1').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [1, current_page]);} );} );</script><script type='text/javascript'> jQuery(document).bind('gform_post_render', function(event, formId, currentPage){if(formId == 1) {gf_global["number_formats"][1] = {"2":{"price":false,"value":false},"3":{"price":false,"value":false},"7":{"price":false,"value":false},"12":{"price":"decimal_dot","value":false},"14":{"price":"decimal_dot","value":false},"16":{"price":false,"value":false},"17":{"price":false,"value":false},"23":{"price":false,"value":false},"24":{"price":false,"value":false},"25":{"price":false,"value":false},"26":{"price":false,"value":false},"21":{"price":false,"value":false},"27":{"price":"decimal_dot","value":false},"37":{"price":false,"value":false},"36":{"price":"decimal_dot","value":false},"51":{"price":"decimal_dot","value":false},"39":{"price":false,"value":false},"40":{"price":false,"value":false},"41":{"price":false,"value":false},"42":{"price":"decimal_dot","value":false},"28":{"price":false,"value":false},"29":{"price":false,"value":false},"30":{"price":false,"value":false},"31":{"price":false,"value":false},"48":{"price":false,"value":false},"49":{"price":false,"value":false},"50":{"price":false,"value":false},"32":{"price":false,"value":false},"33":{"price":false,"value":false},"34":{"price":false,"value":false},"43":{"price":false,"value":false},"45":{"price":false,"value":false},"44":{"price":false,"value":false},"46":{"price":false,"value":false},"47":{"price":"decimal_dot","value":false},"10":{"price":false,"value":false},"11":{"price":false,"value":false},"15":{"price":false,"value":false},"52":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][1] = { logic: { 7: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"install-setup"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"install-setup"}]}},16: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},23: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"17","operator":"is","value":"3.7.x"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},24: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"17","operator":"is","value":"3.8.x"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},25: {"field":{"actionType":"show","logicType":"any","rules":[{"fieldId":"17","operator":"is","value":"4.1.x"},{"fieldId":"17","operator":"is","value":"4.2.x"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},26: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"17","operator":"is","value":"5.x"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"vbulletin"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},37: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"xenforo"},{"fieldId":"3","operator":"is","value":"install-setup"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"xenforo"},{"fieldId":"3","operator":"is","value":"install-setup"}]}},39: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"xenforo"},{"fieldId":"3","operator":"is","value":"update-forum"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"2","operator":"is","value":"xenforo"},{"fieldId":"3","operator":"is","value":"update-forum"}]}},48: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Free Quote"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Free Quote"}]}},43: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Clean infected website"}]},"nextButton":null,"section":{"actionType":"show","logicType":"all","rules":[{"fieldId":"3","operator":"is","value":"Clean infected website"}]}},10: {"field":{"actionType":"hide","logicType":"any","rules":[{"fieldId":"2","operator":"is","value":""},{"fieldId":"2","operator":"is","value":"na"},{"fieldId":"3","operator":"is","value":"custom-development"},{"fieldId":"3","operator":"is","value":"custom-design"},{"fieldId":"3","operator":"is","value":"contact-us"},{"fieldId":"3","operator":"is","value":"free-quote"},{"fieldId":"3","operator":"is","value":"forum-migration"}]},"nextButton":null,"section":{"actionType":"hide","logicType":"any","rules":[{"fieldId":"2","operator":"is","value":""},{"fieldId":"2","operator":"is","value":"na"},{"fieldId":"3","operator":"is","value":"custom-development"},{"fieldId":"3","operator":"is","value":"custom-design"},{"fieldId":"3","operator":"is","value":"contact-us"},{"fieldId":"3","operator":"is","value":"free-quote"},{"fieldId":"3","operator":"is","value":"forum-migration"}]}} }, dependents: { 7: [7,12,14],16: [16,17,23,24,25,26,21,27],23: [23],24: [24],25: [25],26: [26],37: [37,36,51],39: [39,40,41,42],48: [48,49,50],43: [43,45,44,46,47],10: [10,11,15,52] }, animation: 1, defaults: {"2":"na","3":"free-quote","27":{"27.1":"","27.2":"","27.3":""},"51":{"51.1":"","51.2":"$29.00","51.3":""},"42":{"42.1":"","42.2":"","42.3":""},"29":{"29.2":"","29.3":"","29.4":"","29.6":"","29.8":""},"47":{"47.1":"","47.2":"","47.3":""}}, fields: {"2":[7,7,16,16,23,24,25,26,37,37,39,39,10,10],"3":[7,7,16,16,23,24,25,26,37,37,39,39,48,48,43,43,10,10],"7":[],"12":[],"14":[],"16":[],"17":[23,24,25,26],"23":[],"24":[],"25":[],"26":[],"21":[],"27":[],"37":[],"36":[],"51":[],"39":[],"40":[],"41":[],"42":[],"28":[],"29":[],"30":[],"31":[],"48":[],"49":[],"50":[],"32":[],"33":[],"34":[],"43":[],"45":[],"44":[],"46":[],"47":[],"10":[],"11":[],"15":[],"52":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){gf_apply_rules(1, [7,16,23,24,25,26,37,39,48,43,10], true);jQuery('#gform_wrapper_1').show();jQuery(document).trigger('gform_post_conditional_logic', [1, null, true]);} );} if(window["gformInitPriceFields"]) jQuery(document).ready(function(){gformInitPriceFields();} );if( typeof window.gf_global["gfcalc"] == "undefined" ) { window.gf_global["gfcalc"] = {}; } window.gf_global["gfcalc"][1] = new GFCalc(1, [{"field_id":27,"formula":"( {Target Version:23} + {Target Version:24} + {Target Version:25} + {Target Version:26}) * {Total Number of posts:21}","rounding":""},{"field_id":42,"formula":"{Current Xenforo Version:40}  *  {Total Number of posts:41}","rounding":""},{"field_id":47,"formula":"{Hosting Type:44}  *  ({Blackhat SEO SPAM Injections:46.1} + {Search Engine Blacklisting (Google, Bing, Yahoo, etc):46.2} + {Desktop AntiVirus Blacklisting (i.e., AVG, Norton, McAfee):46.3} + {Cross-Site Scripting (XSS) Infections:46.4} + {Backdoors:46.5} + {Phishing Lures:46.6} + {Infected Database \/ SQL Injections:46.7} + {Malicious Redirects:46.8} + {Hijacked Websites:46.9} + {Email SPAM Abuse:46.11} + {Dirty Search Engine Results:46.12} + {Obfuscated JavaScript Injections:46.13} + {Malicious Redirects:46.8} + {Hijacked Websites:46.9} + {Email SPAM Abuse:46.11} + {Dirty Search Engine Results:46.12} + {Obfuscated JavaScript Injections:46.13} + {Embedded Trojans:46.14}  + {Hidden & Malicious iFrames:46.15}  + {Drive-by-Download Injections:46.16}  + {Obfuscated JavaScript Injections:46.13}  + {Redirections Targeting Mobile Devices:46.17} )","rounding":""}]);if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }jQuery('#input_1_31').mask('(999) 999-9999').bind('keypress', function(e){if(e.which == 13){jQuery(this).blur();} } );} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} );</script><script type='text/javascript'> jQuery(document).ready(function(){jQuery(document).trigger('gform_post_render', [1, 1]) } ); </script>
+</div>                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	        <section class="fc-section fc_whatClientsSay ">
+            <div class="fc-misc green-s-plane left-bottom-misc wow slideInLeft"></div>			                <div class="fc-wrapper">
+										                    <div class="container">
+                        <div class="carosol-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">Testimonials</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">Our success & pride is in satisfaction of our growing & happy clients.</p>
+							<!-- Slider-->
+    <div class="owl-carousel fc-review-slider owl-theme">
+		            <div class="item  wow fadeInDown review-slide fc-bg-pink" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/Rob-Jackson.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Rob Jackson</p>
+                        <a href="http://androidforums.com/" target="_blank">Android Forums                        </a>
+                        <blockquote>
+							They were very fast to reply, communication was a dream from start to finish. It began with a quote, a start date, and how many (expected) days it would take, and ended with a happy customer. We came back a month or so later with a second plugin request. We will use them again.                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-cgreen" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/PlayerUp.gif"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Eric Schweizer</p>
+                        <a href="http://playerup.com/" target="_blank">Player UP                        </a>
+                        <blockquote>
+							They have knowledge beyond xenForo and know the ins and outs of both server management and web development. They have a solid team, everyone is well spoken and communication team available around 16/7. The support is excellent. Typically not picky about support but they guys deserve credit.                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-orange" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/preview-full-Shanon-Renee.jpeg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Shannon Renee</p>
+                        <a href=" https://www.rcpowers.com/" target="_blank">Rc Power                        </a>
+                        <blockquote>
+							ForumCube was very professional and very quick to respond. They helped solve issues with a custom plugin that was created for us. Even though the task got much larger than anticipated, they still fixed all the issues and stayed with us until all was resolved. They didn't add on additional costs to their original quote even though the project took...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-gray" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/ZAC.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Zac Fields</p>
+                        <a href="http://www.pigskinhub.com/forum" target="_blank">Pigskin Hub                        </a>
+                        <blockquote>
+							Thanks to ForumCube, my site is live and it is EXACTLY what I wanted. I posted a request up on the XenForo forums a couple months ago trying to find someone to help me design a forum. I am fairly technically capable, but I have a new baby at home and it would take me far too much time to...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-green" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/Mooclab.png"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Carolyn McIntyre</p>
+                        <a href="https://www.mooclab.club/" target="_blank">Mooc Lab                        </a>
+                        <blockquote>
+							@ForumCube responded to a custom addon request I made in order to improve and enhance a feature on my site allowing users to find compatible online study buddies for online courses. They proved to be very professional and worked exactly to my specifications, tweaking and changing things along the way if I asked them to. They kept me updated on...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-blue" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/preview-full-BD-Outdoor.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Jason Hayashi</p>
+                        <a href="https://www.bdoutdoors.com/forums/" target="_blank">BD OutDoors                         </a>
+                        <blockquote>
+							I hired Fahad and his team to re-theme my forums and build some custom plugins. I am super impressed with the professional, quick and quality work these guys do. There was never a "can't do it" answer and they worked through all of my changes and bugs without hesitation. The communication was very good (I swear Fahad never takes a...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-pink" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/preview-full-pugski.png"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Phil Pugliese</p>
+                        <a href=" http://pugski.com/" target="_blank">Pugski                         </a>
+                        <blockquote>
+							ForumCube was one of the first companies to reach out for me when we we were looking for help with a migration and an evolution in our site. I really appreciated their patients when talking to us since we don't speak "computer-ese", if we had trouble conveying our thoughts and vision they helped us through expresssing it and made sure...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-cgreen" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2018/07/preview-full-2018-07-19_1335.png"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Gordon LaPlante </p>
+                        <a href="http://forum.gcreate.com/index.php" target="_blank">gCreate 3D                         </a>
+                        <blockquote>
+							We worked with FormCube to make some modifications to our new XF2 forum. We wanted to add a few plugins and change the layout. Working with them was easy and they were very responsive to our questions. They also worked with the theme we already had installed. The process went smoothly and they showed us several demos as they worked...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-orange" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2019/08/dw.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Bernhard Castiglioni</p>
+                        <a href="http://drummerworld.com/forums/index.php" target="_blank">Bernhard Castiglioni                        </a>
+                        <blockquote>
+							I wanted to transfer the Drummerworld Forum (180'000 members) from V-Bulletin to Xenforo. I found Forumcube and received a reliable offer. The work started immediately and everything ran smoothly and professionally. The forum works like a charm: www.drummerworld.com/forums. After implementing I wanted some graphics and little things to change - was done within hours - I'm really perfectly satisfied. i...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-gray" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2019/08/CarClean.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>MstrfBlng (Tim Striujs)</p>
+                        <a href="https://forum.carclean.com" target="_blank">Carclean                        </a>
+                        <blockquote>
+							I contacted ForumCube for a custom plugin and they answered promptly. Communication was clear and fast. Pricing was good and we received a well working plugin blazing fast. It needed some extra work and modifications, and again they acted very fast. Next time again!                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-green" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2019/08/epicnpc.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>Michael Zihal</p>
+                        <a href="https://www.epicnpc.com" target="_blank">EpicNPC                        </a>
+                        <blockquote>
+							We hired FC to remake 4 addons for our transaction from Vbulletin to Xenforo2. The overall experience was good and we plan to use them for future addons. Communication is professional, turnaround time is on par with other developers and understanding of the project requirements is also good. The one issue we had was a bug that was fixed but...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		            <div class="item  wow fadeInDown review-slide fc-bg-blue" data-wow-delay=".2s">
+                    <div class="profile-img"><img src="https://www.forumcube.com/wp-content/uploads/2019/08/3dallusions-user.jpg"
+                                                  alt="client image" width="289"></div>
+                    <div class="content">
+                        <p>TheAllusionist</p>
+                        <a href="https://www.3dallusions.com" target="_blank">3dallusions                        </a>
+                        <blockquote>
+							Working with ForumCube was a very pleasant experience for a change, I have done a lot of work with freelancers for work on Joomla and rarely are the services worth what I pay. In this case they quoted a fee for a xenForo 2 Joomla bridge, and they provided the functionality for the price quoted. There were tweaks to the...                        </blockquote>
+                    </div>
+            </div><!--/item -->
+		    </div>
+                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	        <section class="fc-section fc_platform ">
+            <div class="fc-misc blue-s-plane left-bottom-misc wow slideInLeft"></div>			            <div class="fc-curve-sec "
+                 style="background-color: transparent">
+									                        <div class="sec-overlay" style="background: rgba(235,189,54,0.9)"></div>
+					                    <div class="container">
+                        <div class="cols-sec fc-content">
+                            <h2 class="wow fadeInDown sec-heading" data-wow-delay=".3s">Let's build something great together</h2>
+                            <p class="wow fadeInDown sec-desc" data-wow-delay=".9s">Learn more about our services for the platform of your choice & see how our services can help you grow</p>
+							<div class="col-logo blocks-cols row all-install-sev">
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/07/xenforo-1.png" alt="ins-icon">
+              
+                </div>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/wordpress.png" alt="ins-icon">
+              
+                </div>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2015/02/vb-logo2.png" alt="ins-icon">
+              
+                </div>
+	                        </div>
+
+        </div>
+	        <div class="wow fadeInDown col-md-3"
+             data-wow-delay=".5s">
+            <div class="col-wrap">
+                <div class="col-icon">
+               
+                        <img src="https://www.forumcube.com/wp-content/uploads/2018/06/laravel.png" alt="ins-icon">
+              
+                </div>
+	                        </div>
+
+        </div>
+	
+</div><!-- col-md-12 all-install-sev -->                        </div><!-- /fc-content -->
+                    </div><!-- /container -->
+                </div><!-- fc-wrapper/fc-curve-sec -->
+        </section><!-- /fc-section -->
+	
+
+</div><!-- /fc-home-main-content -->
+ 
+<!-- =============================================================================== -->
+<!--                           Footer Section                                            -->
+
+<div class="footer-section">
+    <div class="footer-wrap">
+
+        <div class="container">
+            <div class="footer-logo"><img src="https://www.forumcube.com/wp-content/themes/forumcube/assets/img/footer-logo.png" alt="" width="155" height="95"></div>
+
+            <div class="footer-links-wrap">
+                <ul class="footer-cols">
+                    <!-- col-1-->
+                    <li class="footer-col">
+                        <h4>Company
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h4>
+                        <div class="menu-footer-one-container"><ul id="menu-footer-one" class="sub-links"><li id="menu-item-5087" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5087"><a href="https://www.forumcube.com/who-we-are/">Who We Are</a></li>
+<li id="menu-item-5084" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5084"><a href="https://www.forumcube.com/services/">Services</a></li>
+<li id="menu-item-5637" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5637"><a href="https://www.forumcube.com/downloads/mailchimp-xenforo-integration/">Xenforo Add-on</a></li>
+<li id="menu-item-5086" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5086"><a href="https://www.forumcube.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-5085" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5085"><a href="https://www.forumcube.com/terms-conditions/">Terms &#038; Conditions</a></li>
+</ul></div>                    </li>
+                    <!-- col-2-->
+                    <li class="footer-col">
+                        <h4>SERVICES
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h4>
+                        <div class="menu-footer-two-container"><ul id="menu-footer-two" class="sub-links"><li id="menu-item-5213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5213"><a href="https://www.forumcube.com/services/custom-plugin-mod-extension-development/">Custom Plugin / MOD / Extension Development</a></li>
+<li id="menu-item-5090" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5090"><a href="https://www.forumcube.com/services/custom-forum-theme-skin-template/">Xenforo Themes / Skin / Forum Template</a></li>
+<li id="menu-item-5089" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5089"><a href="https://www.forumcube.com/services/forum-transfer-migration/">Xenforo|Vbulletin Forum Transfer &#038; Migration</a></li>
+<li id="menu-item-5093" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5093"><a href="https://www.forumcube.com/services/forum-install-setup/">Xenforo Installation &#038; Forum Setup</a></li>
+<li id="menu-item-5092" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5092"><a href="https://www.forumcube.com/services/update-forum-services/">Update Forum Services</a></li>
+</ul></div>                    </li>
+
+                    <!-- col-3-->
+                    <li class="footer-col">
+                        <h4>Customer Services
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h4>
+                        <div class="menu-footer-three-container"><ul id="menu-footer-three" class="sub-links"><li id="menu-item-5094" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5094"><a href="https://www.forumcube.com/disclaimer/">Disclaimer</a></li>
+<li id="menu-item-5095" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5095"><a href="https://www.forumcube.com/refund-policy/">Refund Policy</a></li>
+<li id="menu-item-5096" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-5096"><a href="https://www.forumcube.com/privacy-policy/">Privacy Policy</a></li>
+</ul></div>                    </li>
+
+                    <!-- col-4-->
+                    <li class="footer-col">
+                        <h4>Get on Social
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </h4>
+
+                        <ul class="sub-links social-links">
+                            <li><a href="https://www.facebook.com/forumcube" class="facebook"><i class="fa fa-facebook"></i></a></li>                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /footer-links-wrap -->
+
+            <footer>
+                <p>Copyright © 2020 Karigar Web Solutions. All rights reserved.</p>
+                <p>A brand of <a href="https://www.karigar.pk">Karigar Web Solutions</a></p>
+            </footer>
+        </div><!-- /container -->
+    </div><!--- /footer-wrap -->
+</div>
+
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+
+<link rel='stylesheet' id='gforms_reset_css-css'  href='https://www.forumcube.com/wp-content/plugins/gravityforms/css/formreset.min.css?ver=2.4.20' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css'  href='https://www.forumcube.com/wp-content/plugins/gravityforms/css/formsmain.min.css?ver=2.4.20' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css'  href='https://www.forumcube.com/wp-content/plugins/gravityforms/css/readyclass.min.css?ver=2.4.20' type='text/css' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css'  href='https://www.forumcube.com/wp-content/plugins/gravityforms/css/browsers.min.css?ver=2.4.20' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var edd_scripts = {"ajaxurl":"https:\/\/www.forumcube.com\/wp-admin\/admin-ajax.php","position_in_cart":"","has_purchase_links":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"1","checkout_page":"https:\/\/www.forumcube.com\/checkout\/","permalinks":"1","quantities_enabled":"1","taxes_enabled":"0"};
+/* ]]> */
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var gf_global = {"gf_currency_config":{"name":"U.S. Dollar","symbol_left":"$","symbol_right":"","symbol_padding":"","thousand_separator":",","decimal_separator":".","decimals":2},"base_url":"https:\/\/www.forumcube.com\/wp-content\/plugins\/gravityforms","number_formats":[],"spinnerUrl":"https:\/\/www.forumcube.com\/wp-content\/plugins\/gravityforms\/images\/spinner.gif"};
+/* ]]> */
+</script>
+
+
+
+
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js?hl=en&#038;render=explicit&#038;ver=5.3.4'></script>
+		<script type="text/javascript">
+			( function( $ ) {
+				$( document ).bind( 'gform_post_render', function() {
+					var gfRecaptchaPoller = setInterval( function() {
+						if( ! window.grecaptcha || ! window.grecaptcha.render ) {
+							return;
+						}
+						renderRecaptcha();
+						clearInterval( gfRecaptchaPoller );
+					}, 100 );
+				} );
+			} )( jQuery );
+		</script>
+
+		
+		<!-- Cookie Notice plugin v1.3.2 by Digital Factory https://dfactory.eu/ -->
+		<div id="cookie-notice" role="banner" class="cookie-notice-hidden cookie-revoke-hidden cn-position-bottom" aria-label="Cookie Notice" style="background-color: rgba(0,0,0,1);"><div class="cookie-notice-container" style="color: #fff;"><span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span><span id="cn-notice-buttons" class="cn-buttons-container"><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button wp-default button" aria-label="Ok">Ok</a><a href="https://www.forumcube.com/privacy-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button wp-default button" aria-label="Privacy policy">Privacy policy</a></span><a href="javascript:void(0);" id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" aria-label="Ok"></a></div>
+			
+		</div>
+		<!-- / Cookie Notice plugin -->
+<script defer src="https://www.forumcube.com/wp-content/cache/autoptimize/js/autoptimize_1262db3fe2984a43b2dc951db7617f9e.js"></script></body>
+</html>
